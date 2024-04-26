@@ -60,7 +60,7 @@
               </p>
               <p style="text-align:center">
                 <a href="mailto:mayukhsen1301@gmail.com">Email</a>&nbsp/&nbsp
-                <a href="files/Mayukh-Sen_Resume.pdf">CV</a> &nbsp/&nbsp
+                <a href="files/Mayukh_Sen_Resume.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://twitter.com/RedDevil1301">Twitter</a> &nbsp/&nbsp
                 <a href="https://github.com/mayukhsen13">Github</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/mayukhsen1301/">LinkedIn</a>
@@ -118,6 +118,71 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
+            <tr onmouseout="clipnerf_stop()" onmouseover="clipnerf_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src='images/arca.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function clipnerf_start() {
+                    document.getElementById('clipnerf_image').style.opacity = "1";
+                  }
+
+                  function clipnerf_stop() {
+                    document.getElementById('clipnerf_image').style.opacity = "0";
+                  }
+                  clipnerf_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Automatically Auditing LLMs by Discrete Optimization</papertitle>
+                <br>
+                Mayukh Sen
+                <br>
+                <a href="">Report</a> /
+                <a href="">slides</a> /
+                <a href="https://github.com/mayukhsen13/auditing-llms_stat588_project">Code</a>
+                <p> LLMs is automatically searched for input-output pairs. Audit models by specifying and solving a discrete optimization problem. We look for non-toxic prompt and toxic output pairs and exact matches for politically nuanced prompts by reversing LLMs. 
+                  Used Coordinate Ascent (ARCA) for reversing LLM and log probability loss to assess LLM performance.
+                  Using gpt-2, BERT and GPT-J and Civil Comments Dataset to perform experiments and detect toxic outputs. 
+                  Observed similar performance in success rate with prompt length  over all LLMs denoting the effectiveness and robustness of ARCA for auditing LLMs. 
+              </td>
+            </tr>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr onmouseout="clipnerf_stop()" onmouseover="clipnerf_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src='images/twitter.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function clipnerf_start() {
+                    document.getElementById('clipnerf_image').style.opacity = "1";
+                  }
+
+                  function clipnerf_stop() {
+                    document.getElementById('clipnerf_image').style.opacity = "0";
+                  }
+                  clipnerf_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>Twitter Search App</papertitle>
+                <br>
+                Mayukh Sen ,Brandon Salter  , Divya Shah , Max Jacobs
+                <br>
+                <a href="https://docs.google.com/document/d/1Fs70HzSs8BzHoueGwGIKFUDicy_ujEpjBc17Cmwd5gc/edit?usp=sharing">Report</a> /
+                <a href="https://docs.google.com/presentation/d/17zNbRTo5AFXfWmEow9Dty-s7heJQiUf6Yx03DAOvOnI/edit?usp=sharing">slides</a> /
+                <a href="https://github.com/brandonsalter/TwitterSearchApp_694_Team4_2024">Code</a>
+                <p> Built a Search App that retreives Tweets , Retweets and userinfo of users tweeting. <br> Data was Streamed from twitter and loaded ito Mongo DB And Google BigQuery.
+                Performed Extract, Transform and Load (ETL) operations on the data to clean and preprocess it . Then User Data is stored into MongoDB wheras Tweet and Retweets are stored in Big Query to exploit the relational aspect of Tweets and use a foreign key to relate them.
+                No Duplicates are made to ensure data consistency in databse. Search function is made using f-strings constructed from user input to build SQL Queries . Search functions made similarly to query JSON objects and arrays in MongoDB.
+              <br> Cache is implemented to speed up searches. Heap is used in cache to store searches as Key-Value Pair. Significant latency and throughput improvement upon cache implementation.</p>
+              </td>
+            </tr>
+
+
 
             <tr onmouseout="clipnerf_stop()" onmouseover="clipnerf_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
